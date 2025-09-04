@@ -1,0 +1,12 @@
+# UI PLAN
+- Dark theme with subtle gradients and soft shadows.
+- Page 1 (Token Board):
+  - Header with sort and filter.
+  - Grid of rounded cards, color-coded by % change.
+  - Hover/focus elevation, accessible labels.
+- Page 2 (Moon Race):
+  - Left rail with targets (100K, 1M, 10M, 100M, 1B).
+  - Center chart with vertical lanes, tokens positioned by MCAP/target ratio.
+  - Right leaderboard, top 3 highlighted.
+- Breakpoints: ≤480px (mobile), 481–1024px (tablet), ≥1025px (desktop).
+- Accessibility: visible focus ring, aria labels, color + text cues.

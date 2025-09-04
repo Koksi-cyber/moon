@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Moon Race</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body data-page="race">
+  <header class="app-header">
+    <h1>MOON RACE</h1>
+  </header>
+
+  <main class="race-layout">
+    <aside class="race-rail" aria-label="Race targets">
+      <div class="rail-title">RACE TO</div>
+      <div class="rail-buttons" role="radiogroup" aria-label="Race target">
+        <button class="rail-btn" data-target="100000" aria-label="Race to 100 thousand">100K</button>
+        <button class="rail-btn" data-target="1000000" aria-label="Race to 1 million">1M</button>
+        <button class="rail-btn active" data-target="10000000" aria-label="Race to 10 million" aria-pressed="true">10M</button>
+        <button class="rail-btn" data-target="100000000" aria-label="Race to 100 million">100M</button>
+        <button class="rail-btn" data-target="1000000000" aria-label="Race to 1 billion">1B</button>
+      </div>
+    </aside>
+
+    <section class="race-chart" aria-label="Race chart">
+      <div class="chart-track">
+        <!-- lanes are drawn via CSS background -->
+        <div id="bubbles" class="bubbles"></div>
+      </div>
+    </section>
+
+    <aside class="race-leaderboard" aria-label="Leaderboard">
+      <div class="lb-title">LEADERBOARD</div>
+      <div id="lb-top3" class="lb-top3"></div>
+      <ol id="lb-list" class="lb-list"></ol>
+    </aside>
+  </main>
+
+  <footer class="app-footer"></footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
